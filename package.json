@@ -1,0 +1,11 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "private": "true",
+  "scripts": {
+    "start": "npm start --prefix server",
+    "watch": "npm run watch --prefix server && npm start --prefix client",
+    "install": "npm install --prefix server && npm install --prefix client",
+    "test": "npm test --prefix server -- --coverage --watchAll=false && npm test --prefix client -- --coverage --watchAll=false"
+  }
+}
